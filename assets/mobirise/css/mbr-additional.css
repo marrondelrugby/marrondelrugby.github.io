@@ -1343,6 +1343,17 @@ body {
 .cid-qx8DbxGCW0 .mbr-section-subtitle {
   letter-spacing: .2rem;
 }
+.cid-qxvJGUNMxn {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #f7ed4a;
+}
+.cid-qxvJGUNMxn .mbr-section-subtitle {
+  color: #5b686b;
+}
+.cid-qxvJGUNMxn B {
+  color: #635a51;
+}
 .cid-qxr6j28sTD {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -1356,7 +1367,7 @@ body {
   padding-top: 2rem;
 }
 .cid-qxr6j28sTD .card-box {
-  background-color: #ffffff;
+  background-color: #f7ed4a;
   padding: 2rem;
 }
 .cid-qxr6j28sTD h4 {
@@ -1384,6 +1395,9 @@ body {
     max-width: 20%;
     padding: 15px;
   }
+}
+.cid-qxr6j28sTD .mbr-text B {
+  color: #635a51;
 }
 .cid-qxrnVyNxSA {
   padding-top: 15px;
@@ -1890,4 +1904,70 @@ body {
   padding-top: 15px;
   padding-bottom: 0px;
   background-color: #ffffff;
+}
+.cid-qxvJvG87vZ {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e4d295;
+}
+.cid-qxvJvG87vZ .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxvJvG87vZ .btn {
+  margin: 0 0 .5rem 0;
+}
+.cid-qxvJtLqe7R {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e4d295;
+}
+.cid-qxvJtLqe7R .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxvJtLqe7R .btn {
+  margin: 0 0 .5rem 0;
+}
+.cid-qxvJrNAyBL {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e4d295;
+}
+.cid-qxvJrNAyBL .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxvJrNAyBL .btn {
+  margin: 0 0 .5rem 0;
+}
+.cid-qxvJlIup0N {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e4d295;
+}
+.cid-qxvJlIup0N .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxvJlIup0N .btn {
+  margin: 0 0 .5rem 0;
+}
+.cid-qxvJoM8rQc {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e4d295;
+}
+.cid-qxvJoM8rQc .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxvJoM8rQc .btn {
+  margin: 0 0 .5rem 0;
+}
+.cid-qxvKOGDVR2 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #e4d295;
+}
+.cid-qxvKOGDVR2 .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxvKOGDVR2 .btn {
+  margin: 0 0 .5rem 0;
 }
