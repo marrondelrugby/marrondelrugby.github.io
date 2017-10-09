@@ -1354,50 +1354,48 @@ body {
 .cid-qxvJGUNMxn B {
   color: #635a51;
 }
-.cid-qxr6j28sTD {
-  padding-top: 45px;
-  padding-bottom: 45px;
+.cid-qxvM4H93BY {
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-image: url("../../../assets/images/line-inter-desde-lejos-con-clubhouse-de-fondo-2000x1500.jpg");
 }
-.cid-qxr6j28sTD .card-img {
-  background-color: #fff;
-}
-.cid-qxr6j28sTD .card-img a {
+.cid-qxvM4H93BY .card-img a {
   display: block;
   padding-top: 2rem;
 }
-.cid-qxr6j28sTD .card-box {
-  background-color: #f7ed4a;
-  padding: 2rem;
+.cid-qxvM4H93BY .card-box {
+  padding: 0 2rem;
 }
-.cid-qxr6j28sTD h4 {
+.cid-qxvM4H93BY .mbr-section-btn {
+  padding-top: 1rem;
+}
+.cid-qxvM4H93BY .mbr-section-btn a {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.cid-qxvM4H93BY h4 {
   font-weight: 500;
   margin-bottom: 0;
   text-align: left;
+  padding-top: 2rem;
 }
-.cid-qxr6j28sTD p {
+.cid-qxvM4H93BY p {
+  margin-bottom: 0;
   text-align: left;
+  padding-top: 1.5rem;
 }
-.cid-qxr6j28sTD .mbr-text {
+.cid-qxvM4H93BY .mbr-text {
   color: #767676;
 }
-.cid-qxr6j28sTD .card-wrapper {
+.cid-qxvM4H93BY .card-wrapper {
+  padding-bottom: 2rem;
+  background: #ffffff;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   transition: box-shadow 0.3s;
 }
-.cid-qxr6j28sTD .card-wrapper:hover {
+.cid-qxvM4H93BY .card-wrapper:hover {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s;
-}
-@media (min-width: 992px) {
-  .cid-qxr6j28sTD .my-col {
-    flex: 0 0 20%;
-    max-width: 20%;
-    padding: 15px;
-  }
-}
-.cid-qxr6j28sTD .mbr-text B {
-  color: #635a51;
 }
 .cid-qxrnVyNxSA {
   padding-top: 15px;
