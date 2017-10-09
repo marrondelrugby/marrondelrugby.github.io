@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Marrón del Rugby",
-    "currentPage": "m16-8-oct-17.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -30,7 +30,7 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.3.2",
-    "uniqCompNum": 107,
+    "uniqCompNum": 111,
     "versionPublish": "4.3.2",
     "favicon": "@PROJECT_PATH@/assets/images/pelota-de-rugby-flash-attack-n3-belgrano-athletic-club-d-nq-np-822147-mla25640327726-062017-o-128x96.png",
     "noImageResize": "",
@@ -240,7 +240,7 @@
             "background-color": "@bgColor"
           },
           "_name": "content8",
-          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#82786e\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"archivo.html\">Noticias anteriores</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#82786e\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-white-outline\" href=\"archivo.html\">Noticias anteriores</a> <a class=\"btn btn-white\" href=\"page12.html\">Formaciones P.S (7/10)</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content8-24",
           "_cid": "qxrnVyNxSA",
           "_protectedParams": [],
@@ -515,7 +515,7 @@
       "settings": {
         "meta_descr": "Información variada no específica de Belgrano",
         "title": "varios",
-        "order": 11
+        "order": 12
       },
       "components": [
         {
@@ -550,7 +550,7 @@
       "settings": {
         "meta_descr": "Información sobre plantel superior",
         "title": "m23-5-oct-17",
-        "order": 10
+        "order": 11
       },
       "components": [
         {
@@ -771,7 +771,7 @@
       "settings": {
         "meta_descr": "Website Maker Description",
         "title": "archivo",
-        "order": 8
+        "order": 9
       },
       "components": [
         {
@@ -868,7 +868,7 @@
       "settings": {
         "meta_descr": "Web Maker Description",
         "title": "suipacha-m9",
-        "order": 7
+        "order": 8
       },
       "components": [
         {
@@ -903,7 +903,7 @@
       "settings": {
         "meta_descr": "Web Maker Description",
         "title": "uni-mdq-m13",
-        "order": 6
+        "order": 7
       },
       "components": [
         {
@@ -938,7 +938,7 @@
       "settings": {
         "meta_descr": "Website Creator Description",
         "title": "pre-c-7-oct-17",
-        "order": 5
+        "order": 6
       },
       "components": [
         {
@@ -973,7 +973,7 @@
       "settings": {
         "meta_descr": "Site Generator Description",
         "title": "m16-8-oct-17",
-        "order": 4
+        "order": 5
       },
       "components": [
         {
@@ -1389,7 +1389,7 @@
       "settings": {
         "meta_descr": "Web Page Builder Description",
         "title": "pre-a-b-d-7-oct-17",
-        "order": 3
+        "order": 4
       },
       "components": [
         {
@@ -1450,7 +1450,7 @@
       "settings": {
         "meta_descr": "Web Site Maker Description",
         "title": "inter-7-oct-17",
-        "order": 2
+        "order": 3
       },
       "components": [
         {
@@ -1485,7 +1485,7 @@
       "settings": {
         "meta_descr": "Web Site Builder Description",
         "title": "Novedades-2al8-oct",
-        "order": 9
+        "order": 10
       },
       "components": [
         {
@@ -1509,7 +1509,7 @@
       "settings": {
         "meta_descr": "Website Generator Description",
         "title": "pre-d-6-oct-17",
-        "order": 1
+        "order": 2
       },
       "components": [
         {
@@ -1533,6 +1533,93 @@
           "_customHTML": "<section class=\"mbr-section info1\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/04.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#e4d295\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"media-container-column title col-12 col-lg-7 col-md-6\">\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">\n                    Esta página estará disponible...</h3>\n                <h2 mbr-if=\"showTitle\" class=\"align-left mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    ¡MUY PRONTO!</h2>\n            </div>\n            <div class=\"media-container-column col-12 col-lg-3 col-md-4\">\n                <div class=\"mbr-section-btn align-right py-4\" mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"index.html\">Volver a la página principal</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "info1-2y",
           "_cid": "qxyS7Zuffc",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "page12.html": {
+      "settings": {
+        "meta_descr": "Web Page Maker Description",
+        "title": "formaciones-PS-7-oct-vs-Regatas-y-MN",
+        "order": 1
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "H2": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#f7ed4a"
+            }
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/foto-plantel-superior-1-923x500.jpg\" selected parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    Formaciones de plantel superior</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">\n                    Sábado 7 de octubre de 2017<br>vs. Regatas de Bella Vista y vs. Manuel Belgrano (Pre-\"D\")<br>Canchas: Virrey del Pino y Campo del Pinazo</h3>\n                <p class=\"mbr-text align-center mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-article data-multiline>\n                    Shape your future web project with sharp design and refine coded functions\n                </p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content5-30",
+          "_cid": "qxzcO47PBo",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0",
+              "text-align": "left"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            },
+            ".section-text B": {
+              "color": "#b1a374"
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#82786e\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".section-text\" mbr-text><b>\n                    Primera </b>(Virrey del Pino, 15.30hs)<br>Ferronato F., Bruno T., Favre I.; Rebussone M., Martínez A.; Gorrissen T., Filgueira M., Galli A.; Cubelli F., Rosati T.; Masera M., Buggiani P.; Uriburu S., Filipuzzi T. y Spinelli N. <br><i>Suplentes</i>: Bonano S., Magneres L., De la Serna J., Teglia T.<br><b><br>Intermedia </b>(Virrey del Pino, 13.45hs)<br>Palacios M., Cirigliano N., Herrera L.; Guayta B., Magneres L.; Camardón F., Rocca A., De Carli J.; Retamosa J.M., Migale R.; Martínez F., Venter T.; Goapper F., Carroll S. y Landó J.I.<br><i>Suplentes</i>: Bence C., Brescia J., Davies A.<br><b><br>Pre-Intermedia \"A\" </b>(Virrey del Pino, 12.00hs)<br>Ábila M., Massot J., Irala E.; Zaballa J.M., Pennesi J.M.; Ammand de Mendieta, Ton Vaneiro, Brie E.; Peyloubet A., Beato T.; Bernabé T., Falco J.; Codino J., Adrogué F. y Lima N.<br><i>Suplentes</i>: Brie R., Vergara J.<br><br><b>Pre-Intermedia \"B\" </b>(Virrey del Pino, 10.30hs)<br>Urrustoy J.M., Fernández Mendy F., Fernández Mendy M.; Costa A., Bertolini S.; Oses M., Massa N., Comberti F.; Filgueira J., Spitaleri F.; Cicardo L., Saholaver E.; Bascounet G., Santourian G. y Forestier J.<br><i>Suplentes</i>: Rivero B., Meninato M., Caetano B., Bernardin T., Acevedo G., Espiño R., Pignocchi L., Romat J.C.<br><br><b>Pre-Intermedia \"C\" </b>(Pinazo, 10.30hs)<br><i>(a confirmar)</i>: Lavigne E., Guarino T., Bechara A.; Sarquis, Corrales J.; Botas J., Zorzano I., Azcue B.; Carchio T., García Usandizaga G.; Torres Agüero T., Salaberry I.; Iriarte, De María F. y Ravina A.<br><i>Suplentes</i>: Bunge B.<br><br><b>Pre-Intermedia \"D\"</b>&nbsp;(Pinazo, 12.30hs, vs. Manuel Belgrano, torneo de Primera \"B\")<br><i>(a confirmar)</i>: Hanisch S., Ventura R., Lambiasse F.; Rodríguez T., Hanisch A.; Vallero I., Güemes T., Pacheco F.; García Guerrero F., Rosati S.; Casanello G., Rosati B.; Pioli F., Elascar J. y Olguín O.<br><i>Suplentes</i>: Fernández A., Garay I.</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_anchor": "content9-2z",
+          "_cid": "qxzcJF1UnI",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"mbr-section content8\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row title\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"index.html\">Volver a la página principal</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content8-31",
+          "_cid": "qxzdgsQZ9e",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
