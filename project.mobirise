@@ -30,7 +30,7 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.3.2",
-    "uniqCompNum": 129,
+    "uniqCompNum": 130,
     "versionPublish": "4.3.2",
     "favicon": "@PROJECT_PATH@/assets/images/pelota-de-rugby-flash-attack-n3-belgrano-athletic-club-d-nq-np-822147-mla25640327726-062017-o-128x96.png",
     "noImageResize": "",
@@ -1141,12 +1141,40 @@
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "background-color": "@bgColor",
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "4rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mbr-figure": {
+                "padding-bottom": "1rem"
+              }
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content6",
+          "_customHTML": "<section class=\"mbr-section content6\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n      <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n      <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"150\">\n      <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12 col-md-8\">\n                <div class=\"media-container-row\">\n                    <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                      <img src=\"@PROJECT_PATH@/assets/images/carnes-de-flash-una-pinturita-4128x3096.jpg\" alt=\"Mobirise\" title>  \n                    </div>\n                    <div class=\"media-content\">\n                        <div class=\"mbr-section-text\">\n                            <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Continuando con la tradición de amistad, recibimos a las M10, M11, M12 y M13 del club marplatense.<br><br>Llegaron el viernes a la noche con casi 90 jugadores que fueron alojados por sus pares de Belgrano e invitados a la noche a una fiesta en el club. Los entrenadores, por su parte, fueron agasajados, como de costumbre, con unas típicas carnes de Flash y los consabidos chorizos ahumados en el quincho de Pino en una noche divina.</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qxCjpxKntk",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content6-3l"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
             ".mbr-text, blockquote": {
               "color": "#767676"
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p>Continuando con la tradición de amistad, recibimos a las M10, M11, M12 y M13 del club marplatense.</p><p>Llegaron el viernes a la noche con casi 90 jugadores que fueron alojados por sus pares de Belgrano e invitados a la noche a una fiesta en el club. Los entrenadores, por su parte, fueron agasajados, como de costumbre, con unas típicas carnes de Flash y los consabidos chorizos ahumados en el quincho de Pino en una noche divina.</p><p>La relación que une a ambos clubes viene de hace rato. En Universitario de Mar del Plata jugaron, entre otros Tati y Facundo Camardón, la Morsa Espinal y Tato Llan de Rosos. Actualmente en Pre-\"A\" Teo Mayer y en M23 Ernesto \"Tito\" Rocha.&nbsp;</p><p>Varios de estos jugadores, a su vez, fueron entrenados por Hernán Camardón quien se acercó también al quincho a recibir a los de Uni. Universitario es un destino obligado de gira de varias de estas divisiones de infantiles, sobre todo a fin de año donde además del rugby se puede disfrutar el mar y la playa.</p><p>El sábado fue día de partido en Pinazo con un día maravilloso y pudimos ver un rato a la M13.</p><p>Acá les compartimos algunas fotos y testimonios de jugadores y entrenadores.&nbsp;</p></div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><p><span style=\"font-size: 1rem;\">La relación que une a ambos clubes viene de hace rato. En Universitario de Mar del Plata jugaron, entre otros Tati y Facundo Camardón, la Morsa Espinal y Tato Llan de Rosos. Actualmente en Pre-\"A\" Teo Mayer y en M23 Ernesto \"Tito\" Rocha.&nbsp;</span><br></p><p>Varios de estos jugadores, a su vez, fueron entrenados por Hernán Camardón quien se acercó también al quincho a recibir a los de Uni. Universitario es un destino obligado de gira de varias de estas divisiones de infantiles, sobre todo a fin de año donde además del rugby se puede disfrutar el mar y la playa.</p><p>El sábado fue día de partido en Pinazo con un día maravilloso y pudimos ver un rato a la M13.</p><p>Acá les compartimos algunas fotos y testimonios de jugadores y entrenadores.&nbsp;</p></div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content1-3j",
           "_cid": "qxBBYo0prX",
           "_protectedParams": [],
