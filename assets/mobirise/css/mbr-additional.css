@@ -1343,6 +1343,44 @@ body {
 .cid-qx8DbxGCW0 .mbr-section-subtitle {
   letter-spacing: .2rem;
 }
+.cid-qxTzFNGadV {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  background-image: url("../../../assets/images/foto-plantel-superior-1-923x500.jpg");
+}
+.cid-qxTzFNGadV H2 {
+  color: #ffffff;
+}
+.cid-qxTzFNGadV .mbr-section-subtitle {
+  color: #f7ed4a;
+}
+.cid-qxTzDiMy1s {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #efefef;
+}
+.cid-qxTzDiMy1s .line {
+  background-color: #82786e;
+  color: #82786e;
+  align: center;
+  height: 2px;
+  margin: 0 auto;
+}
+.cid-qxTzDiMy1s .section-text {
+  padding: 2rem 0;
+  text-align: left;
+}
+.cid-qxTzDiMy1s .inner-container {
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cid-qxTzDiMy1s .inner-container {
+    width: 100% !important;
+  }
+}
+.cid-qxTzDiMy1s .section-text B {
+  color: #b1a374;
+}
 .cid-qxvJGUNMxn {
   padding-top: 30px;
   padding-bottom: 0px;
