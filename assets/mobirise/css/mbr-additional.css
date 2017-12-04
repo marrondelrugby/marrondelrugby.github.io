@@ -1814,52 +1814,6 @@ body {
     font-size: 20px !important;
   }
 }
-.cid-qxrlLs9wsc {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #e4d295;
-}
-.cid-qxrlLs9wsc .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-qxrlAVbvrL {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-qxrlAVbvrL .counter-container {
-  color: #767676;
-}
-.cid-qxrlAVbvrL .counter-container ul {
-  margin-bottom: 0;
-}
-.cid-qxrlAVbvrL .counter-container ul li {
-  margin-bottom: 1rem;
-  list-style: none;
-}
-.cid-qxrlAVbvrL .counter-container ul li:before {
-  position: absolute;
-  left: 0px;
-  margin-top: -10px;
-  padding-top: 3px;
-  content: '';
-  display: inline-block;
-  text-align: center;
-  margin: 5px 10px;
-  line-height: 20px;
-  transition: all .2s;
-  color: #ffffff;
-  background: #149dcc;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  content: '✓';
-}
-.cid-qxrlEMezwZ {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
 .cid-qxB7cgeCzG {
   padding-top: 45px;
   padding-bottom: 0px;
@@ -7201,6 +7155,11 @@ body {
 .cid-qCNP5XYIZ8 B {
   color: #232323;
 }
+.cid-qCOhqYc3xJ {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #e4d295;
+}
 .cid-qCMOFmRzDk {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -7259,4 +7218,50 @@ body {
 }
 .cid-qCL784WVZO .btn {
   margin: 0 0 .5rem 0;
+}
+.cid-qxrlLs9wsc {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  background-color: #e4d295;
+}
+.cid-qxrlLs9wsc .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qxrlAVbvrL {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-qxrlAVbvrL .counter-container {
+  color: #767676;
+}
+.cid-qxrlAVbvrL .counter-container ul {
+  margin-bottom: 0;
+}
+.cid-qxrlAVbvrL .counter-container ul li {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+.cid-qxrlAVbvrL .counter-container ul li:before {
+  position: absolute;
+  left: 0px;
+  margin-top: -10px;
+  padding-top: 3px;
+  content: '';
+  display: inline-block;
+  text-align: center;
+  margin: 5px 10px;
+  line-height: 20px;
+  transition: all .2s;
+  color: #ffffff;
+  background: #82786e;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  content: '✓';
+}
+.cid-qxrlEMezwZ {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
 }
