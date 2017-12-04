@@ -29,11 +29,12 @@
       },
       "additionalSetColors": [
         "#dee255",
-        "#f3f4f6"
+        "#f3f4f6",
+        "#000000"
       ]
     },
     "versionFirst": "4.3.2",
-    "uniqCompNum": 401,
+    "uniqCompNum": 418,
     "versionPublish": "4.5.2",
     "favicon": "@PROJECT_PATH@/assets/images/pelota-de-rugby-flash-attack-n3-belgrano-athletic-club-d-nq-np-822147-mla25640327726-062017-o-128x96.png",
     "noImageResize": "",
@@ -10046,6 +10047,1214 @@
       "components": [
         {
           "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(45deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "@media (min-width: 992px)": {
+                "padding-right": "4rem"
+              },
+              "@media (max-width: 991px)": {
+                "padding-bottom": "3rem"
+              }
+            },
+            ".mbr-text": {
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            }
+          },
+          "_name": "header3",
+          "_customHTML": "<section class=\"header3\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"100\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#b1a374\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Gradient\" name=\"gradientBg\" condition=\"bg.type == 'color'\" checked>\n        <input type=\"color\" title=\"Color 2\" name=\"color2\" value=\"#000000\" condition=\"gradientBg\">\n        \n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/staff-entrenadores-primera-1500x1125.jpg\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"media-content\">\n                <h1 class=\"mbr-section-title mbr-white pb-3 mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\">\n                    Cena de rugby</h1>\n                <h3 class=\"mbr-section-subtitle align-left mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-section-text mbr-white pb-3 \">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\" mbr-theme-style=\"display-5\">El viernes 1º de diciembre celebramos la fiesta de la cena de rugby donde se otorgaron los reconocimientos a los jugadores de cada una de las divisiones además del tradicional \"Cap\".</p>\n                </div>\n                <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"cena-rugby-2017.html#content9-bc\">Crónica</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"cena-rugby-2017.html#gallery1-bf\">Fotos</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_anchor": "header3-b5",
+          "_isUserblock": true,
+          "_cid": "qCMLeapvAR",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0",
+              "text-align": "left"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            },
+            ".section-text B": {
+              "color": "#82786e"
+            }
+          },
+          "_name": "content9",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#b1a374\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".section-text\" mbr-text>El rugby de <b>Belgrano Athletic</b> tuvo su noche de fiesta, como sucede todos los años, para cerrar un 2017 con un calendario extensísimo para el nivel amateur, con la presencia de 350 asistentes que disfrutaron de las ya clásicas especialidades <i>made in Belgrano</i>, como los chorizos ahumados y la bondiola al disco de Flash, Beve y sus secuaces.<br>&nbsp;<br>Este año, además de arrancar con el <b>Nacional de Clubes</b>, se volvió al formato tradicional del torneo <b>URBA</b> con dos ruedas, esta vez con <b>12 (doce) equipos</b>, pero con playoffs de semifinal y final, completando de esta manera <b>28 (veintiocho)</b> fechas con equipos de primer nivel para la Primera y <b>22 (veintidós)</b> fechas para el resto de las divisiones de Plantel Superior, además del Seven de Primera.<br><br>Para algunos jugadores de la Primera, además, hubo convocatorias al <b>Plan de Alto Rendimiento de la UAR</b> (<i>Ferrito Ferronato, Frankie Gorrissen, Aguja Gómez Di Nardo, la Morsa Espinal</i>); a distintos seleccionados como el de la <b>URBA</b> para el Torneo Argentino (<i>Panchito Cubelli, Ferrito, la Morsa Espinal, Mauro Rebussone, el Vago Retamosa y Tommy Filipuzzi</i>, además de <i>Panchito Gradín</i> como entrenador); al segundo equipo nacional: <b>Argentina XV</b> (<i>Frankie, Ferro y Aguja</i>) y hasta una <b>concentración nacional senior,</b>&nbsp;convocada la semana última por <b>Mario Ledesma</b>, Head Coach de <b>Jaguares</b>, para probar jugadores para su eventual convocatoria al equipo de la franquicia argentina en 2018 (<i>Frankie Gorrissen, Ferrito Ferronato, la Morsa Espinal y Tommy Bruno</i>).<br><br>En divisiones Juveniles, el calendario constó de aproximadamente <b>21 (veintiún) fechas</b>&nbsp;más el Seven y también las distintas convocatorias a seleccionados URBA (<i>Ramón Duggan</i> e <i>Iñaki Schlottmann</i> de M16&nbsp;y <i>Teo Blacksley</i> de M19) y UAR (<i>Juan Cruz Rodríguez Herrera</i>, M19 y para Seven, Franco Florio de M17). Además hubo también convocatorias al Plan de Desarrollo de URBA como <i>Franco Morales (</i>M16) y <i>Santos de la Serna</i> (M17).<br><br>Como puede verse, un calendario por demás nutrido, que requirió de un gran esfuerzo por parte de todo el cuerpo técnico (entrenadores, preparadores físicos, médicos y managers), sostenido durante todo el año.<br><br>La cena contó con la impecable animación de <b>Marito Di Rocco</b>&nbsp;lookeado para la ocasión con una remera tipo frac y un saco rosa, que le puso el tono justo de humor y entusiasmo, manejando a la perfección los tiempos de risas y seriedad; con \"perlitas\" se su sello, como la de rebautizar al Vago como \"<i>Iván Retamosa</i>\"; decir que ahora en los chicos se ve mucho el \"<i>roll out</i>\" (en alusión al gesto técnico del \"off-load\") o la acotación de \"<i>Ah,... Caetano Veloso...</i>\" al nombrar el apellido del jugador <i>Facundo Caetano</i>, como parte del plantel campeón de M23. ¡Grande Marito!<br><br>El puntapié inicial lo dio como es usual, el presidente del club, <b>Sebastián Carroll</b>, con un estilo llano y directo, hablando del <b>presente</b>, donde destacó el gran trabajo realizado por todos a lo largo del año: Comisión Directiva, sub-comisión de rugby y encargados, entrenadores, cuerpo técnico, jugadores e hinchas; del <b>pasado</b>, donde recordó el aporte de los que este año nos dejaron, como <i>Horacio Gramajo, Niceto Anavi y Víctor Di Leo</i>; y del <b>futuro</b> al referirse a los proyectos del clubhouse de Pinazo y del torneo de fútbol infantil, agradeciendo a <b>Marcelo Tecca </b>especialmente por haberse cargado este proyecto al hombro.<br><br>Luego de la apertura del \"presi\", se sucedieron los clásicos discursos: <i><b>Marcelo \"Chapa\" Ruiz</b></i> como presidente de la sub-comisión de rugby hablando de lo que significa el compromiso de todos con el club y sus valores, sobre todo el del tercer tiempo de Infantiles como el mejor de la URBA;&nbsp;<i><b>Panchito Cubelli </b></i>como capitán de la Primera agradeciendo a todos y contando una anécdota de hace 20 años cuando era todavía jugador de infantiles, comparando la realidad de ese entonces de Belgrano que peleaba el descenso a la realidad de hoy, campeón el año pasado y protagonista hoy en todas las divisiones de Plantel Superior.<br><br>En el medio se otorgaron los reconocimientos a <b>mejor jugador</b> y <b>jugador revelación</b> de cada una de las divisiones, <b>desde M15 hasta Primera </b>y el reconocimiento a la <b>M23</b>, campeona del <b>URBA Top 12. </b>Todas estas acciones fueron además acompañadas por sendos videos, editados todos con gran generosidad por <b>Santiago \"Colo\" Sendón</b>.&nbsp;<br><br><b>PREMIO AL MEJOR JUGADOR</b><br><br><b>M15</b>: Manolo Otero<br><b>M16</b>: Félix Ceñal<br><b>M17</b>: Jeremy Smith<br><b>M19</b>: Juan Cruz Rodríguez Herrera<br><b>M23</b>: Ramiro Brie<br><b>Pre-\"D\"</b>: Tomás Güemes<br><b>Pre-\"C\"</b>: Lautaro \"Laucha\" Pignocchi<br><b>Pre-\"B\"</b>: Tweety Peyloubet<br><b>Pre-\"A\"</b>: Felipe \"Pipa\" Adrogué<br><b>Intermedia</b>: Juan Martín \"Vago\" Retamosa<br><b>Primera:</b> Benjamín \"Morsa\" Espinal<br><br>Cada entrenador subió al escenario para entregarle el premio a los jugadores y en este sentido, un punto alto de la noche fue el discurso de <i><b>Horacio \"Flaquito\" Cangueiro</b></i>, entrenador de M19, que parado con la ayuda de Vallarta y el acompañamiento en el escenario de los demás entrenadores de la división, nos dio a todos una lección de superación: \"<i>Todos hicieron que mi vida la diéramos vuelta. Cuando nací, ni el más optimista hubiera pensado que a los 27 años iba a estar recibido, laburando e integrado en el club entrenado a una división..</i>.\". Lejos de centrar su testimonio en sí mismo y las cosas que logró a sus 27 años, Horacito hizo parte de sus logros a todos: \"<i>Yo les tengo que hacer un monumento por lo que hicieron por mí</i>...\".<br><br>====ZZZZZZZZ======&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/I_gIrBzP3AA\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen&gt;&lt;/iframe&gt;===============ZZZZZZZZZZZ==============<br><br>También hubo tiempo para el reconocimiento de <b>Matías \"Matute\" Howard</b> (camada 97), integrante de <b><a href=\"https://www.facebook.com/pumpasxv/\" target=\"_blank\">Pumpas XV</a></b> en el mundial de Mixed Ability Rugby que ganó dicho equipo. El premio fue entregado a \"Cuca\" Salvatori en representación de <i>Matu</i>, de manos de <b>Juan Cruz Güemes</b> (camada 2002), un reciente integrante de los Pumpas XV (video gentileza de <b>Santiago Sendón</b>):<br><br>====ZZZZZZZZ======&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/yoJCRcRmZDY\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen&gt;&lt;/iframe&gt;===============ZZZZZZZZZZZ==============<br><br>Uno de los videos, bajo el lema \"<i>Con los grandes no se jode</i>\", especialmente dedicado a grandes partidos de este año, como el de la ida en Pino con Alumni con la conversión final del Negro Rosati, o el del triunfo contra Hindú con el try de Tommy Bruno -después de una monumental jugada colectiva desde las 25 yardas propias- (video gentileza de <b>Santiago Sendón</b>):<br><br>====ZZZZZZZZ======&lt;iframe width=\"1280\" height=\"480\" src=\"https://www.youtube.com/embed/DaSS7plyCHw\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen&gt;&lt;/iframe&gt;===============ZZZZZZZZZZZ==============<br><br>También hubo un reconocimiento especial para el plantel de la M23, campeón del URBA Top 12. Acá compartimos su video:<br><br>====ZZZZZZZZ======&lt;iframe width=\"1280\" height=\"480\" src=\"https://www.youtube.com/embed/6TcmeRQ4JPE\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen&gt;&lt;/iframe&gt;===============ZZZZZZZZZZZ==============<br><br>El corolario final llegó con la entrega del \"<b>Cap</b>\", la máxima distinción del club, de parte de <b>Francisco Ferronato</b> (ganador en 2016) a <b>Panchito Gradín</b>, el nuevo premiado de 2017, destacando las diferentes facetas de Panchito: \"<i>Lo que hace, lo hace en silencio. Cuando hay que conciliar, concilia y cuando hay que ir al frente va al frente, es entrenador de Belgrano hace 7 años, bicampeón con Buenos Aires y entrenador de M16...</i>\".<br><br>Panchito, entre emocionado y descolocado por lo que significa este premio, \"<i>Es muy grosso por la gente que lo recibió...</i>\" siguió con su mensaje de humildad y de trabajo, reconociéndose parte de un equipo liderado por \"el Pelado\" Willy Tramezzani \"<i>...que es el que labura, y nosotros somos un equipo cuyo gran mérito es hacer lo que dice el Pelado y ser hinchas de Willy a full.... (...) ... y le estás dando mucho al club pero te estás llevando más de lo que das...</i>\".<br><br>Fue una gran noche, llena de energía, donde todos los discursos y testimonios tuvieron como común denominador el agradecimiento y reconocimiento al esfuerzo y al compromiso de todos, la tranquilidad de haber dejado todo y las ganas de ir por más en 2018.<br><br>Por eso y por mucho más: ¡Salud!<br></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_cid": "qCMNUA9eWC",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content9-bc"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "qCNOKukXP0",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/chester-y-huevo-grande-1024x768.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/chester-y-huevo-grande-1024x768-800x600.jpg",
+                "alt": "Chester Freysselinard y Huevo Posse",
+                "customStyle1": "display-7",
+                "caption": "Chester y Huevo",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/willy-roman-aldo-topobeltrame-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/willy-roman-aldo-topobeltrame-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Román, Willy, Topo y Aldo",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/varios-plantel-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/varios-plantel-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Negro Rosati, Tweety Peyloubet, Vago Retamosa, Manu Spitaleri y Chucha Uriburu",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/toto-de-la-serna-debut-en-primera-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/toto-de-la-serna-debut-en-primera-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Toto De la Serna debut en Primera",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/tobirepetto-y-dos-mas-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/tobirepetto-y-dos-mas-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Entrenadores de M12",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/tomy-guemes-recibiendo-premio-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/tomy-guemes-recibiendo-premio-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Tomás Güemes, mejor jugador Pre \"D\"",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/tinker-y-peter-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/tinker-y-peter-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Tinker Voltán y Peter Gorrissen",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/tinker-negroretamosa-samgorrisse-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/tinker-negroretamosa-samgorrisse-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "El Negro, Sam y Tinker disfrutando",
+                "active": true
+              }
+            ]
+          },
+          "_anchor": "gallery1-bf"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "qCNSRq8uy1",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/tecca-y-flaquito-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/tecca-y-flaquito-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Marcelo Tecca y su felicitación al Flaquito Cangueiro",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/subcomision-de-rugby-mas-marito-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/subcomision-de-rugby-mas-marito-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Sub-comisión de rugby junto a Marito",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-lolo-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-lolo-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Adolfo \"Lolo\" Martínez (C96), debut en Primera",
+                "active": true
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/rodrigoares-nuno-dante-camada96-1024x758.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/rodrigoares-nuno-dante-camada96-1024x758-800x592.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Rodrigo Ares, Dante Cameroni y Nuno Rosati, todos camada 96",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-rama-brie-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-rama-brie-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "\"Rama\" Brie (C94) premio al mejor jugador de M23 campeón URBA",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/ps-frankie-cabezon-zaballa-topogonzalez-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/ps-frankie-cabezon-zaballa-topogonzalez-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Juan Manuel Zaballa, Frankie Gorrissen, Juani López Puerto y Cabezón Magneres",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/sebas-carroll-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sebas-carroll-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Discurso inicial de Sebastián Carroll, presidente de Belgrano Athletic Club",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/sebascarroll-tecca-viejaponte-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/sebascarroll-tecca-viejaponte-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Tecca, Sebas y La Vieja Ponte, celebrando un año más",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "gallery1-bh"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "qCNSSWzHgA",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-pumpas-a-mati-howard-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-pumpas-a-mati-howard-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Cuca Salvatori recibiendo el premio en representación de Matute Howard",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-pre-b-tweety-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-pre-b-tweety-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Tweety Peyloubet, premio al mejor jugador de Pre \"B\"",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-pre-a-pipa-adrogue-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-pre-a-pipa-adrogue-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Felipe \"Pipa\" Adrogué (C95), premio al mejor jugador de Pre \"A\"",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-lauta-pignocchi-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-lauta-pignocchi-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Lautaro \"Laucha\" Pignocchi (C96), premio al mejor jugador de Pre \"C\"",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/camada98-santigonzalez-y-amigos-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/camada98-santigonzalez-y-amigos-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Camada 98",
+                "active": true
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-morsa-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-morsa-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Bejamín \"Morsa\" Espinal (C92), premio al mejor jugador de Primera",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/premio-jeremy-smith-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/premio-jeremy-smith-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Jeremy Smith (C00), premio al mejor jugador de M17",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/peterduggan-y-tobi-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/peterduggan-y-tobi-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Peter Duggan y Tobi Repetto, entrenadores M16",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "gallery1-bi"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "qCNSUrtjuW",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/peterduggan-e-ivo-recibiendo-premio-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/peterduggan-e-ivo-recibiendo-premio-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Iván Charabora (C01), premio jugador revelación de M16",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/panchito-cubelli-recortada-491x363.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/panchito-cubelli-recortada-491x363-491x363.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Panchito Cubelli, capitán de Primera dando su discurso",
+                "active": true
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/panke-y-chapa-ruiz-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/panke-y-chapa-ruiz-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Panke Allende, coordinador de infantiles toma la palabra",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/pajaroiglesias-jatopo-y-aguja-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/pajaroiglesias-jatopo-y-aguja-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Pájaro Iglesias, Jatopo Massot y Aguja Gómez Di Nardo",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/panchito-cap-con-sebascarroll-y-chaparuiz-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/panchito-cap-con-sebascarroll-y-chaparuiz-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "La felicidad de Panchito Gradín al recibir el Cap 2017",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/matiguemes-y-marito-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/matiguemes-y-marito-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Marito junto a Matías Güemes, integrante de la sub-comisión",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/m23-arriba-del-escenario-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/m23-arriba-del-escenario-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Plantel de M23 campeón URBA Top 12 2017",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/m17-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/m17-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Camada 2000",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "gallery1-bj"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "qCNX3kOzc5",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/ferrito-hablando-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/ferrito-hablando-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Francisco Ferronato (Cap 2016) con su discurso de entrega del Cap 2017",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/discos-con-bondiola-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/discos-con-bondiola-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Las bondiolas al disco de Flash y Beve, brillando como siempre",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/julianrebussone-mudorosati-ramabrie-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/julianrebussone-mudorosati-ramabrie-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Bauti Rosati, Juli Rebussone y Rama Brie",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/m15-1024x432.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/m15-1024x432-800x337.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Camada 2002 (M15)",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/huevo-y-hueso-muy-buena-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/huevo-y-hueso-muy-buena-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Hueso Halle y Diego \"Huevo\" Posse, entrenadores de M15",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/losfernandezmendy-y-rataperticone-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/losfernandezmendy-y-rataperticone-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Mesa de primeras líneas: Rata Perticone, Mateo y Fran Fernández Mendy",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/gradines-y-willy-con-cap-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/gradines-y-willy-con-cap-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Staff acompañando a Panchito Gradín estrenando su Cap",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/marito-dirocco-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/marito-dirocco-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Marito vestido para la ocasión",
+                "active": true
+              }
+            ]
+          },
+          "_anchor": "gallery1-bk"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              },
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out"
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                },
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out"
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\" inline>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Gradient Overlay\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Overlay Color 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Gallery\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "qCNX4z59ZF",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-4",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/frangoapper-y-rafamigale-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/frangoapper-y-rafamigale-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Fran Goapper y Rafa Migale",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/chancha-pajarocarrara-chinooets-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/chancha-pajarocarrara-chinooets-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Pájaro Carrar, Chancha Delmar y Chino Oets",
+                "active": false
+              },
+              {
+                "tags": "Creative",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/cuca-patas-balu-pochola-pelado-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/cuca-patas-balu-pochola-pelado-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Cuca Salvatori, Patas de Martino, Balú Spitaleri, Pochola Cangueiro y Pelado Rebussone",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/luis-magneres-debut-primera-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/luis-magneres-debut-primera-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Luis Magneres, debut en Primera",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/facu-camardon-debut-primera-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/facu-camardon-debut-primera-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Facundo \"Negro\" Camardón, debut en Primera",
+                "active": true
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/camada2000-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/camada2000-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Camada 2000 (M17)",
+                "active": false
+              },
+              {
+                "tags": "Responsive",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/camada99-bautibeato-y-amigos-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/camada99-bautibeato-y-amigos-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Camada 99",
+                "active": false
+              },
+              {
+                "tags": "Animated",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/timinetkzy-panchitocubelli-tincholopezisnardi-1024x683.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/timinetkzy-panchitocubelli-tincholopezisnardi-1024x683-800x533.jpg",
+                "alt": "",
+                "customStyle1": "display-7",
+                "caption": "Juli Timinetzky, Pancho Cubelli y Tincho López Isnardi",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "gallery1-bl"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            },
+            "B": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-4\">Todas las fotos son gentileza de Hernán \"Huevo\" Posse</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">En el nocturno del jueves 5 de octubre, la M23 jugó contra Regatas de Bella Vista en Pino. ¡Enterate los detalles del partido!</h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content4-bg",
+          "_isUserblock": true,
+          "_cid": "qCNP5XYIZ8",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
             "& when (@bg-type = 'color')": {
@@ -10054,18 +11263,59 @@
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
             },
-            ".mbr-section-subtitle": {
-              "color": "#767676"
+            ".socicon-bg-facebook": {
+              "background": "#3e5b98",
+              "color": "contrast(#3e5b98)"
             },
-            ".btn": {
-              "margin": "0 0 .5rem 0"
+            ".socicon-bg-twitter": {
+              "background": "#4da7de",
+              "color": "contrast(#4da7de)"
+            },
+            ".socicon-bg-googleplus": {
+              "background": "#dd4b39",
+              "color": "contrast(#dd4b39)"
+            },
+            ".socicon-bg-vkontakte": {
+              "background": "#5a7fa6",
+              "color": "contrast(#5a7fa6)"
+            },
+            ".socicon-bg-odnoklassniki": {
+              "background": "#f48420",
+              "color": "contrast(#f48420)"
+            },
+            ".socicon-bg-pinterest": {
+              "background": "#c92619",
+              "color": "contrast(#c92619)"
+            },
+            ".socicon-bg-mail": {
+              "background": "#134785",
+              "color": "contrast(#134785)"
+            },
+            ".btn-social": {
+              "border": "none !important"
+            },
+            "& when (@squareIcons)": {
+              ".btn-social": {
+                "border-radius": "0 !important"
+              }
+            },
+            "[class^=\"socicon-\"]:before, [class*=\" socicon-\"]:before": {
+              "line-height": "44px"
+            },
+            "@media (max-width: 767px)": {
+              ".btn": {
+                "font-size": "20px !important"
+              }
+            },
+            ".mbr-section-title ": {
+              "text-align": "center"
             }
           },
-          "_name": "info1",
-          "_customHTML": "<section class=\"mbr-section info1\" group=\"Info\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked=\"\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/04.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#e4d295\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"media-container-column title col-12 col-lg-7 col-md-6\">\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">\n                    Esta página estará disponible...</h3>\n                <h2 mbr-if=\"showTitle\" class=\"align-left mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\">\n                    ¡MUY PRONTO!</h2>\n            </div>\n            <div class=\"media-container-column col-12 col-lg-3 col-md-4\">\n                <div class=\"mbr-section-btn align-right py-4\" mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"index.html\">Volver a la página principal</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "info1-b4",
+          "_name": "social-buttons3",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"SocialLikes,Socicon\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input inline type=\"range\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input inline type=\"range\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Square Icons\" name=\"squareIcons\">\n        <header>It will share the current page</header>\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\" checked>\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\" checked>\n        <input type=\"checkbox\" title=\"Google+\" name=\"google\">\n        <input type=\"checkbox\" title=\"Vkontakte\" name=\"vkontakte\">\n        <input type=\"checkbox\" title=\"Odnoklassniki\" name=\"odnoklassniki\">\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\">\n        <input type=\"checkbox\" title=\"Mailru\" name=\"mailru\">\n        \n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#e4d295\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-md-8 align-center\">\n                <h2 class=\"pb-3 mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title \">Seguinos en Instagram y en Twitter: @marrondelrugby<br><br>¡Compartí esta página en tus redes!</h2>\n                <div>\n                    <div class=\"mbr-social-likes\">\n                        <span mbr-if=\"facebook\" class=\"btn btn-social socicon-bg-facebook facebook mx-2\" title=\"Share link on Facebook\">\n                            <i class=\"socicon socicon-facebook\"></i>\n                        </span>\n                        <span mbr-if=\"twitter\" class=\"btn btn-social twitter socicon-bg-twitter mx-2\" title=\"Share link on Twitter\">\n                            <i class=\"socicon socicon-twitter\"></i>\n                        </span>\n                        <span mbr-if=\"google\" class=\"btn btn-social plusone socicon-bg-googleplus mx-2\" title=\"Share link on Google+\">\n                            <i class=\"socicon socicon-googleplus\"></i>\n                        </span>\n                        <span mbr-if=\"vkontakte\" class=\"btn btn-social vkontakte socicon-bg-vkontakte mx-2\" title=\"Share link on VKontakte\">\n                            <i class=\"socicon socicon-vkontakte\"></i>\n                        </span>\n                        <span mbr-if=\"odnoklassniki\" class=\"btn btn-social odnoklassniki socicon-bg-odnoklassniki mx-2\" title=\"Share link on Odnoklassniki\">\n                            <i class=\"socicon socicon-odnoklassniki\"></i>\n                        </span>\n                        <span mbr-if=\"pinterest\" class=\"btn btn-social pinterest socicon-bg-pinterest mx-2\" title=\"Share link on Pinterest\">\n                            <i class=\"socicon socicon-pinterest\"></i>\n                        </span>\n                        <span mbr-if=\"mailru\" class=\"btn btn-social mailru socicon-bg-mail mx-2\" title=\"Share link on Mailru\">\n                            <i class=\"socicon socicon-mail\"></i>\n                        </span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "social-buttons3-be",
           "_isUserblock": true,
-          "_cid": "qCL7aZUlKr",
+          "_cid": "qCMOFmRzDk",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
